@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+#book {
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#settings {
+    display: none;
+    margin-top: 10px;
+}
+
+#settings.show {
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+input[type="color"],
+input[type="number"],
+select {
+    margin-top: 5px;
+}

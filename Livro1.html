@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script1.js" defer></script>
+    <link rel="stylesheet" href="estilos1.css">
+    <title>O óbvio também precisa ser dito</title>
+</head>
+
+<body>
+
+    <div id="book">
+        <button id="settings-btn">Configurações</button>
+        <p id="content">Conteúdo do livro</p>
+        <div id="settings">
+
+            <label for="text-style">Estilo do texto:</label>
+            <select id="text-style">
+                <option value="normal">Normal</option>
+                <option value="italic">Itálico</option>
+                <option value="bold">Negrito</option>
+            </select>
+
+            <label for="text-color">Cor do texto:</label>
+            <input type="color" id="text-color">
+
+            <label for="text-size">Tamanho do texto:</label>
+            <input type="number" id="text-size" min="12" max="48" step="2">
+
+            <label for="background-color">Cor de fundo:</label>
+            <input type="color" id="background-color">
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
