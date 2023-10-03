@@ -1,40 +1,63 @@
 body {
-    background-color: rgb(233, 161, 66);
+    background-color: #e9a142;
+    /* Cor de fundo do corpo */
+    font-family: Arial, sans-serif;
+    /* Fonte padrão */
 }
 
 #book {
-    width: 400px;
-    height: 600px;
+    width: 65%;
+    /* Largura máxima do conteúdo */
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    border: 4px solid gray;
+    border: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+    /* Altura máxima para ativar a barra de rolagem */
+    overflow-y: auto;
+    /* Adicione rolagem vertical quando necessário */
 }
 
-#settings {
-    display: none;
-    margin-top: 10px;
-}
 
-#settings.show {
-    display: block;
-}
-
-button {
+#settings-menu {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 50px;
+    left: 20px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
 }
 
-label {
+#title {
+    text-align: center;
+
+}
+
+#content {
+    color: #333;
+    /* Cor do texto */
+    font-size: 16px;
+    /* Tamanho do texto */
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+}
+
+#settings-menu label {
     display: block;
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-input[type="color"],
-input[type="number"],
-select {
+#settings-menu select,
+#settings-menu input[type="color"],
+#settings-menu input[type="number"] {
+    width: 100%;
+    padding: 5px;
     margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }

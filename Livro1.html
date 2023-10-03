@@ -13,39 +13,51 @@
 
     <div id="book">
         <button id="settings-btn">Configurações</button>
-        <p id="content">Apresentação</p>
-        <p id="content">
-            O texto aborda a preocupação com a ocupação constante devido às distrações tecnológicas, onde a atenção se
-            torna um recurso valioso no momento presente. Ele destaca como as plataformas digitais nos mantêm cativos
-            com conteúdo interminável e como isso afeta nossa comunicação e conexões interpessoais. O autor menciona
-            exemplos de pessoas que substituem a presença pelo materialismo e jovens que priorizam as redes sociais em
-            detrimento do diálogo afetivo. No entanto, ele enfatiza a importância de expressar emoções e elogiar os
-            outros, argumentando que ações simples podem melhorar o mundo ao nosso redor. O autor compartilha seu
-            objetivo de discutir o óbvio no livro e encoraja os leitores a fazerem o mesmo. Ele também faz uma analogia
-            com a série Harry Potter, chamando o livro de uma "horcrux" pessoal. No final, ele incentiva as pessoas a
-            compartilharem suas perspectivas e ações com o mundo. Em resumo, o texto ressalta a necessidade de valorizar
-            a comunicação autêntica e as conexões humanas em um mundo repleto de distrações digitais.
-        </p>
-        <div id="settings">
-
+        <div id="settings-menu" class="hidden">
             <label for="text-style">Estilo do texto:</label>
             <select id="text-style">
-                <option value="normal">Normal</option>
-                <option value="italic">Itálico</option>
-                <option value="bold">Negrito</option>
+                <option value="Calibri">Calibri</option>
+                <option value="Arial">Arial</option>
+                <option value="Arial Black">Arial Black</option>
+                <option value="Times New Roman">Times New Roman</option>
             </select>
 
             <label for="text-color">Cor do texto:</label>
             <input type="color" id="text-color">
 
-            <label for="text-size">Tamanho do texto:</label>
+            <label for="text-style">Tamanho do texto:</label>
             <input type="number" id="text-size" min="12" max="48" step="2">
 
             <label for="background-color">Cor de fundo:</label>
             <input type="color" id="background-color">
+
+            <button id="save-btn">Salvar Configurações</button>
+
+        </div>
+        <div id="content">
+
+            <p id="title">Apresentação</p>
+            <p>
+                O texto aborda a preocupação com a ocupação constante devido às distrações tecnológicas, onde a atenção
+                se
+                torna um recurso valioso no momento presente. Ele destaca como as plataformas digitais nos mantêm
+                cativos
+                com conteúdo interminável e como isso afeta nossa comunicação e conexões interpessoais. O autor menciona
+                exemplos de pessoas que substituem a presença pelo materialismo e jovens que priorizam as redes sociais
+                em
+                detrimento do diálogo afetivo. No entanto, ele enfatiza a importância de expressar emoções e elogiar os
+                outros, argumentando que ações simples podem melhorar o mundo ao nosso redor. O autor compartilha seu
+                objetivo de discutir o óbvio no livro e encoraja os leitores a fazerem o mesmo. Ele também faz uma
+                analogia
+                com a série Harry Potter, chamando o livro de uma "horcrux" pessoal. No final, ele incentiva as pessoas
+                a
+                compartilharem suas perspectivas e ações com o mundo. Em resumo, o texto ressalta a necessidade de
+                valorizar
+                a comunicação autêntica e as conexões humanas em um mundo repleto de distrações digitais.
+            </p>
+
         </div>
 
-    </div>
 
 
 </body>
